@@ -21,7 +21,7 @@ body{
 }
 .image{
 
-background-image: url("/img/franck.jpg");
+background-image: url("https://source.unsplash.com/rDxP1tF3CmA/2400x1755");
 height: 800px;
 
 background-position: relative center center;
@@ -194,11 +194,21 @@ padding: 0% 90px;
 
 
 .skills{
-    height:500px;
-    margin: 100px 0 100px 0;
+    height:auto;
+    /* margin-bottom: 100px; */
+    background-color: #E3E2DF;
 }
 
 
+.ms{
+
+padding-top: 50px;
+border-bottom: 2px solid;
+width: 200px;
+text-align: center;
+position: relative;
+margin-left: 50%;
+}
  .card {
     display: flex;
     align-items: center;
@@ -352,9 +362,9 @@ padding: 0% 90px;
 
 
 .contact{
-margin-top: 100px;
+/* margin-top: 100px; */
 text-align: center;
-
+padding-top:100px;
 
 
 
@@ -373,7 +383,7 @@ input[type=submit]{
 
 q{
   font-style: italic;
-  fo
+
 }
 .mySlides .author{
   color: cornflowerblue;
@@ -404,17 +414,20 @@ footer{
 
 
 #demo a {
-  background-color: black;
+  /* background-color: black; */
   border-radius: 16px;
   height: 50px;
   margin-top: 20%;
   width: 100px;
+  font-size: 50x;
 
-}
+
+} 
+
 #demo span i{
-color: red;
-size: 30px;
-  
+color:grey ;
+font-size: 30px;
+
 }
 /* 
 
