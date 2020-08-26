@@ -3,7 +3,7 @@
 
 body{
     width: auto;
-    height: auto;
+    
     background-color: #FFFFFF;
 }
 /* #header{
@@ -38,17 +38,25 @@ opacity: .6;
   
     color: antiquewhite;
 }
- 
+
 .item-list{
     text-align: center;
-    margin-top: 20px;
+   
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 9999;
+    z-index: 10000;
+    transition: 0.6s;
     width: 100%;
+    padding: 40px 100px;
     
 }
+.item-list.sticky{
+  padding: 20px 100px;
+  background:  #260033;
+  opacity: 6;
+}
+
 .item-list li{
     display: inline;
     list-style-type: none;
@@ -63,10 +71,20 @@ opacity: .6;
     /* font-size: 20px;
      */
 }
+
 .item-list li a:hover{
   color: orangered;
 }
 
+.item-list.sticky li a{
+color: rgb(220,220,220);
+
+}
+
+.item-list.sticky li a :hover{
+  color: yellow;
+  
+  }
 
 .verticle1{
     border-left: 1px solid #e9bd43;
@@ -339,7 +357,7 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 text-align: center;
 font-family: Georgia, 'Times New Roman', Times, serif;
 padding-top: 50px;
-color: #E9B000;
+color: black;
 text-decoration: underline;
 font-size: 30px;
 
@@ -405,6 +423,8 @@ input[type=submit]{
   background-color: #e9bd43;
   border: none;
   width: 100px;
+  border-radius: 16px;
+  padding: 6px 4px;
   
 
 
