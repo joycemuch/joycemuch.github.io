@@ -4,373 +4,433 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="js/style.js">
+    <script src="js/style.js" type="javascript"></script>
      
      
     <link rel="icon" type="image/ico" href="https://www.clipartqueen.com/image-files/color-butterfly.png"/>
-    <!-- <link rel="stylesheet" href="https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyDf4PEHg-f11VJK9WMef14RoWpFX88Ot3g "> -->
-    <script src="https://kit.fontawesome.com/9b64959cec.js" crossorigin="anonymous"></script>
- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
- 
-<!-- JS, Popper.js, and jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
    
+    <script src="https://kit.fontawesome.com/9b64959cec.js" crossorigin="anonymous"></script>
+ 
     <title>Joyce Muchema</title>
 </head>
+<body>
+  
+<div class="main-header">
+ <img src="https://www.clipartqueen.com/image-files/color-butterfly.png" alt="" width="50">
+ <div class="menu" onclick="openMenu()"><i class="fas fa-bars"></i></div>
 
-<div class="image" id="home">
+<nav>
+<div class="nav-item" id="nav-item">
+  <div class="nav-content" >
+  <li class="active"><a href="#">home</a></li>
+  <li><a href="#">about</a></li>
+  <li><a href="#">skills</a></li>
+  <li><a href="#">project</a></li>
+  <li><a href="#">contacts<a></li>
 
-  <div id="header">
-    <div id="call">
-       <i class="fab fa-telegram-plane">    Call/Message: </i>
-   
-        +254 791912477  / +254 754185810
-    </div>
-   
-    </div>
-
-    <div class="item" id="item">
-
-
-        <div class="logo">Myname</div>
-
-
-     <div class="item-list ">
-     <li><a href="#home" class="active">Home</a></li>
-     <li><a href="#about">About me</a></li>
-     <li><a href="#skill">Skills</a></li>
-     <li><a href="#demo">My Projects</a></li>
-     <li><a href="#contact">Contacts</a></li>
-     </div>
-    
-    </div>
- <!-- nav-side -->
-  <div class="social">
-      <div class="verticle1">
-       </div>
- 
-<div class="side-nav">
-    <li><a href=""><i class="fab fa-github"></i></a></li>
-    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
-    <li><a href=""><i class="fab fa-codepen"></i></a></li>
 </div>
 
+
+
+</div>
+
+
+</nav>
+
+
+
+<div class="row">
+<div class="intro  column" >
+
+  <h2 class="typingeffect">HELLO THERE !</h2>
+  
+  <p>i am a junior web developer/Ux Designer and data scientist</p>
+ 
+  <p class="btn"><a href="#">Resume</a></p>
+
+</div>
+
+
+
+
+<!-- side nav -->
+
+<div class="side-item column" id="side-item">
+  <div class="side-content" >
+  <li><a href="https://github.com/joycemuch"><i class="fab fa-github-alt"></i></a></li>
+  <li><a href="https://codepen.io/muchema"><i class="fab fa-codepen"></i></a></li>
+  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+  <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+  <li><a href="#"><i class="fab fa-instagram"></i><a></li>
+
+  
+
+</div>
+
+
+</div>
+</div>
 <script>
+  function openMenu(){
+    var x = document.getElementById("nav-item");
+    if(x.style.display === "block"){
+      x.style.display = "none";
+  }else{
+    x.style.display ="block"
+  }
 
-window.addEventListener("scroll", function(){
-	var header = document.querySelector(".item-list");
-	header.classList.toggle("sticky", window.scrollY > 0)
-})
-  
 
+window.
+window.onclick = function(event){
+  if(event.target == x){
+    x.style.display = 'none';
+  }
+}
+
+}
 </script>
+<!-- hovering arrow -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
- <div class="verticle2">
-      </div> 
-
-</div>
-
-<!-- main text  intro-->
-<div class="intro">
-<h2 class="typingeffect">HELLO THERE !</h2>
-
-<p style="color: aliceblue;">I am a junior Data Scientist and a Full Stack Developer</p>
-<button class="button">Resume </button>
 
 </div>
 
 
-  </div>
 
-<div class="abtme" id="about">
-   <div class="row">
+<!--   about me-->
+ <div class="container">
+     <h2>about</h2>
      
-      <div class="col-md-8">
-          <h3 style="text-decoration-line: underline; text-decoration-thickness: 2px;color: #e7567a;"><b>About Me</b></h3>
-            <p>My name is Joyce. I design and build modern websites that are minimlistic,beautiful,clean and user friendly.I have professionally designed websites since 2018.</p>
-            <p>I also create desktop applications using python.I apply data science to analyze markets for various  applications and websites.One of my goals is to make these applications as  simple as I can with required data.  </p>
-            </div>
-    
-          <div class="col-lg-4">
-              <img src="/img/Wonderwoman.jpg" alt="" height="300px">
-            </div>
+<div class="row1">
+  <div class="column1">
+  <div class="img"><img src="img/cats.png" alt="" height="100vh"></div>
+</div>
+<div class="column1">
 
-   </div>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur molestias obcaecati voluptatum voluptas incidunt minima similique quaerat eum cumque enim in, sequi maiores assumenda? Numquam optio enim corrupti nostrum rem?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptatum sit porro vero sequi explicabo facilis? Quo vitae unde modi id. Fuga quis necessitatibus incidunt facere cum molestiae sint dolor.</p>
+
 </div>
 
-<div class="skills"  id="skill">
+ </div>
+</div>
 
-  <div class="ms" > <h2>My Skills</h2></div>
- 
-<div class="row" style="padding-top: 100px; padding-bottom: 100px;">
-  <div class="circular-progresas-bar col-25">
-    <div class="card">
-        <div class="percent">
-          <svg>
-            <circle cx="105" cy="105" r="100"></circle>
-            <circle cx="105" cy="105" r="100" style="--percent: 50"></circle>
-          </svg>
-          <div class="number">
-            <h3>50<span>%</span></h3>
-          </div>
-        </div>
-        <div class="title">
-          <h2>Web Development</h2>
-        </div>
-      </div>
-      
-      </div>
 
-      <div class="circular-progresas-bar col-25">
-        <div class="card">
-            <div class="percent">
-              <svg>
-                <circle cx="105" cy="105" r="100"></circle>
-                <circle cx="105" cy="105" r="100" style="--percent: 40"></circle>
-              </svg>
-              <div class="number">
-                <h3>40<span>%</span></h3>
-              </div>
-            </div>
-            <div class="title">
-              <h2>Python</h2>
-            </div>
-          </div>
-          
-          
-          </div>
 
-<!--     
-          <div class="social col-30">
-            <div class="verticle3">
-            </div>
-         </div> -->
 
-   <!-- line progress bars -->
 
-   <div class="col-lg-6" > 
-    <!-- skills icons -->
-    <div class="imagery">
-      <i class="fab fa-html5" style="color: orange;"></i>  
-      <i class="fab fa-css3" style="color: blue;"></i>
-      <i class="fab fa-js" style="color: darkorange;"></i>
-    </div>
-    <div class="progress">
-     <div class="progress-bar" style="width:70%;background-color:#e9bd43 ; ">70%</div>
-    </div> 
+<!-- skills -->
+<div class="cs-skill">
+<h2>skills</h2>
+
+<div class="row2">
+
+<div class="column2">
+  <!-- <div class="card"> -->
+  <i class="fab fa-python"></i>
+   <h5>python</h5>
+   <p>Django/Flask</p>
+</div>
+<!-- </div> -->
+
+
+
+<div class="column2">
+  <i class="fab fa-python"></i>
+   <h5>javascript</h5>
+   <p>Debuging</p>
   
   
-    <div class="imagery">
-      <i class="fas fa-database" style="color: lightblue;"></i>
-      <i class="fas fa-server" style="color: grey;"></i>
-      <i class="fab fa-php" style="color: coral;"></i>
-    
-    </div>
-    <div class="progress" >
-     <div class="progress-bar" style="width:50% ;background-color: #e9bd43;">50%</div>
-    </div> 
+   
+   
+
+</div>
+
+
+<div class="column2">
+  <i class="fab fa-python"></i>
+   <h5>Data visualization</h5>
+   <p>D3/JSON API</p>
+
+</div>
+
+</div>
+
+
+
+
+<div class="row2">
+
+  <div class="column2">
+    <!-- <div class="card"> -->
+    <i class="fab fa-python"></i>
+     <h5>Quality Assuarance</h5>
+     <p></p>
+  </div>
+  <!-- </div> -->
   
-
-    <div class="imagery">
-      <i class="fab fa-windows" style="color: cornflowerblue;"></i>
-      <i class="fab fa-linux" style="color:#e9bd43;"></i>
-      <i class="fab fa-android" style="color: lightgreen;"></i>
-      <i class="fab fa-apple"></i>
-
-    </div>
-    <div class="progress">
-     <div class="progress-bar" style="width:80% ; background-color: #e9bd43;">80%</div>
-    </div> 
- 
-       
-
-    <!-- other skills -->
-         <div class="os">
-           <h4>Other Skills</h4>
-             <li>Excel/Word </li>
-             <li>C++</li>
-             <li>Data Science</li>
-             <li>Git</li>
-             <li>Docker</li>
-             <li>IT Automation</li>
-             <li>Machine Learning</li>
-
-
-         </div>
-
-
   
+  
+  <div class="column2">
+    <i class="fab fa-python"></i>
+     <h5>Apis and microservices</h5>
+     <p>Node/Express/Mongoose</p>
+  
+  </div>
+  
+  
+  <div class="column2">
+    <i class="fab fa-python"></i>
+     <h5>Computer Networks</h5>
+     <p></p>
+  
+  </div>
   
   </div>
 
+</div>
+
+
+<!-- time line -->
+
+<div class="container-time">
+  
+<div class="timeline">
+
+<ul>
+  <li>
+    <div class="timeline-content">
+      <h1>heading 1</h1>
+      <h5>20 March 2020</h5>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit officiis necessitatibus dignissimos molestias debitis beatae dolorem, aspernatur repellat maxime quisquam recusandae? Veritatis neque facilis soluta? Natus totam aliquam dolorum possimus.</p>
+    </div>
+  </li>
+  <li>
+    <div class="timeline-content">
+      <h1>heading 2</h1>
+      <h5>20 March 2020</h5>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit officiis necessitatibus dignissimos molestias debitis beatae dolorem, aspernatur repellat maxime quisquam recusandae? Veritatis neque facilis soluta? Natus totam aliquam dolorum possimus.</p>
+    </div>
+  </li>
+  <li>
+    <div class="timeline-content">
+      <h1>heading 3</h1>
+      <h5>20 March 2020</h5>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit officiis necessitatibus dignissimos molestias debitis beatae dolorem, aspernatur repellat maxime quisquam recusandae? Veritatis neque facilis soluta? Natus totam aliquam dolorum possimus.</p>
+    </div>
+  </li><li>
+    <div class="timeline-content">
+      <h1>heading 4</h1>
+      <h5> Jan 2014 - Dec 2017 </h5>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit officiis necessitatibus dignissimos molestias debitis beatae dolorem, aspernatur repellat maxime quisquam recusandae? Veritatis neque facilis soluta? Natus totam aliquam dolorum possimus.</p>
+    </div>
+  </li>
+</ul>
+
+
+
+
 
 </div>
 
 
+
+
+
+
+
 </div>
-
-
-
 <!-- my projects -->
 
+<div class="pr">
+  <h2><strong> my recent</strong> projects</h2>
+</div>
 
-
-
-<div id="demo" class="carousel slide " data-ride="carousel" style= " background-image:url(/img/rg.jpg) ; z-index: 99;">
-<div class="proj"><h3>My Latest Projects</h3></div>
-
-
-
-
-   <ul class="carousel-indicators" style="color: #5A5560;">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1" style="color: #e7567a;"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-  </ul> 
-  
-  <!-- The slideshow -->
-  <div class="carousel-inner" style="padding-top: 100px;"> 
-    <div class="carousel-item active">
-      <img src="img/Figure_1.png" alt="graph" width = "100" >
-      <a href="www.google.com"></a>
-    </div>
-    <div class="carousel-item">
-      <img src="img/Figure_1.png" width="100" >
-    </div>
-    <div class="carousel-item">
-      <img src="img/Figure_1.png" width="100">
-    </div>
+<div class="p-container">
+<div class="p-row">
+<div class="p-cards">
+  <img src="img/Figure_1.png" alt="" height="100">
+  <div class="middle">
+    <div class="text">Simple Covid-19 Graph</div>
+  <a href="https://github.com/joycemuch/covid-19-statistics"><i class="fas fa-link"></i></a>
   </div>
-  
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span><i class="fas fa-chevron-circle-left"></i></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span ><i class="fas fa-chevron-circle-right"></i></span>
-  </a>
 </div>
 
 
 
+<div class="p-cards">
+  <img src="img/scrapper.png" alt="" height="100">
+  <div class="middle">
+    <div class="text">Website scrapper</div>
+    <a href="https://github.com/joycemuch/web-page-scrapper"><i class="fas fa-link"></i></a>
+    
+  </div>
+</div>
+
+<div class="p-cards">
+  <img src="img/website-cat.png" alt="" height="100">
+  <div class="middle">
+    <div class="text">Cat website</div>
+    <a href="https://github.com/joycemuch/cat-rescue"><i class="fas fa-link"></i></a>
+  </div>
+</div>
+
+</div>
 
 
-<!-- contact info -->
-
-<div class="contact" id="contact"  style="background-color: #5A5560;">
-<h3 style="margin-bottom: 40px; font-style: italic;">swing by!</h3>
-<div class="form">
-    <form method="post" name="myemailform" action=mailto:joycemuchema036@gmail.com>
-
-      <label for="fname">Enter Name:</label><br>
-      <input type="text" name="name"><br>
-      
-
-      <label for="email">Email Address:</label><br>
-      <input type="text" name="email"><br>
-      
-
-      <label for="text">Message:</label><br>
-      <textarea name="message"></textarea><br>
-      <br>
-      <input type="submit" value="submit">
-      </form>
-</div
-
-
-
-
-
-
-
-<!-- famous quotes carousel -->
-
-
-<div class="slideshow">
-
-  <div class="mySlides">
-    <q>Tell me and I forget. Teach me and I remember. Involve me and I learn.</q>
-    <p class="author">-Benjamin Franklin</p>
+<div class="p-row" style="margin-top: 20px;">
+  <div class="p-cards">
+    <img src="img/Figure_1.png" alt="" height="100">
+    <div class="middle">
+      <div class="text">Simple Covid-19 Graph</div>
+      <div class="links"><a href="https://github.com/joycemuch/covid-19-statistics"></a></div>
+    </div>
   </div>
   
-  <div class="mySlides">
-    <q>You will face many defeats in life, but never let yourself be defeated.</q>
-    <p class="author">-Maya Angelou</p>
+  
+  
+  <div class="p-cards">
+    <img src="img/Figure_1.png" alt="" height="100">
+    <div class="middle">
+      <div class="text"></div>
+    </div>
   </div>
   
-  <div class="mySlides">
-    <q>Life is really simple, but we insist on making it complicated.</q>
-    <p class="author">-Confucius</p>
+  <div class="p-cards">
+    <img src="img/Figure_1.png" alt="" height="100">
+    <div class="middle">
+      <div class="text">John Doe</div>
+    </div>
   </div>
   
   </div>
 
 
+  <button class="button"><a href="#">Load more</a></button>
+
+
+
+
+
+ </div>
+
+
+<!-- quotes -->
+
+
+<div class="slideshow-container">
+
+  <div class="mySlides">
+    <q>Learning never exhaust the mind</q>
+    <p class="author">- Leonardo da vinci</p>
+  </div>
+  
+  <div class="mySlides">
+    <q>If you cannot do great things, do small things in a great way.</q>
+    <p class="author">- Napoleon Hill</p>
+  </div>
+  
+  <div class="mySlides">
+    <q>In three words I can sum up everything I've learned about life: it goes on.</q>
+    <p class="author">- Robert Frost</p>
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  </div>
+  
+<!-- script -->
+
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-  <script>
-
-    var slideIndex = 0;
-    showSlides();
-    
-    function showSlides() {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}
-      slides[slideIndex-1].style.display = "block";
-      setTimeout(showSlides, 5000); 
-    } 
-    
-    </script>
-    
-
-<!-- 
-
-
-<hr style="background-color: #4d0099;"> -->
-
-<!-- tiny footer -->
+<!-- footer -->
 <footer>
-  <p>&copy 2020 | created by joyce muchema</p>
+  <div class="footer-container">
+<h3> hire me !</h3>
+
+<form>
+  <ul class="form-style-1">
+      <li><label>Full Name <span class="required">*</span></label><input type="text" name="field1" class="field-divided" placeholder="First" /> <input type="text" name="field2" class="field-divided" placeholder="Last" /></li>
+      <li>
+          <label>Email <span class="required">*</span></label>
+          <input type="email" name="field3" class="field-long" />
+      </li>
+      <li>
+          <label>Subject</label>
+          <select name="field4" class="field-select">
+          <option value="Advertise">Advertise</option>
+          <option value="Partnership">Partnership</option>
+          <option value="General Question">General</option>
+          </select>
+      </li>
+      <li>
+          <label>Your Message <span class="required">*</span></label>
+          <textarea name="field5" id="field5" class="field-long field-textarea"></textarea>
+      </li>
+      <li>
+          <input type="submit" value="Submit" />
+      </li>
+  </ul>
+  </form>
+
+
+  </div>
+
+
+  <!-- <hr> -->
+
+  <p class="foot">&copy; 2020 | created and design by joyce Muchema</p>
+
+
+
+
+
 </footer>
 
-    
-</body>
+
+
+
+
+
+
+
+
+
+
+</body> 
+
 </html>
 
 
